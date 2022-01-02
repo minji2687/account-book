@@ -1,0 +1,309 @@
+* {
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: #000000;
+}
+.hidden {
+  display: none;
+}
+
+.wrap {
+  margin: 0 auto;
+}
+
+.account-container {
+  background: #eeece5;
+  position: relative;
+  height: 100vh;
+}
+
+.wrap nav {
+  height: 76px;
+  width: 375px;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
+  padding: 0 40px;
+  display: flex;
+  align-items: center;
+  z-index: 3;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul li a {
+  display: block;
+  padding: 5px;
+}
+
+header.account-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 27px;
+  margin-top: 11px;
+  margin-bottom: 33px;
+}
+
+header.account-header .avatar {
+  width: 43px;
+  height: 43px;
+  border: 1px solid #dccdb6;
+  border-radius: 50%;
+}
+
+header.account-header .account-name {
+  font-weight: 500;
+  font-size: 18px;
+}
+
+header.account-header div a + a {
+  display: inline-block;
+  margin-left: 18px;
+}
+
+/* 계좌번호 공간 */
+
+.account-status {
+  position: relative;
+  width: 279px;
+  height: 155px;
+  background: #ffffff;
+  box-shadow: 0px 0px 16px rgba(226, 191, 66, 0.19);
+  border-radius: 12px;
+  margin: 0 auto 24px auto;
+  padding-top: 14px;
+  text-align: center;
+}
+
+.account-status .account-number {
+  display: block;
+  color: #858585;
+  margin-bottom: 16px;
+}
+
+.account-status .bank-account {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: 2px;
+  margin-bottom: 16px;
+}
+
+.account-status .account-progress-container {
+  display: flex;
+  align-items: center;
+  height: 17px;
+  justify-content: center;
+  margin-bottom: 8px;
+}
+
+.account-status .account-progress-container .progress {
+  position: relative;
+  width: 202px;
+  height: 6px;
+  background: #c4c4c4;
+  border-radius: 3px;
+}
+
+.account-status .account-progress-container .progress .progressing {
+  width: 128px;
+  height: 100%;
+  background: #ffdb4c;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.account-status .account-progress-container .progress > .vertical-bar {
+  box-sizing: content-box;
+  display: block;
+  width: 4px;
+  height: 17px;
+  position: absolute;
+  top: -7px;
+  left: 128px;
+  background: #ff5f00;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.account-status .account-status__text {
+  font-weight: 500;
+  font-size: 14px;
+  color: #858585;
+  text-align: center;
+  line-height: 21px;
+}
+
+.account-status .transfer-btn {
+  position: absolute;
+  top: 14px;
+  right: 17px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.account-status .transfer-btn a {
+  color: #000000;
+}
+
+/* 광고 베너 부분 */
+.ad-banner {
+  text-align: center;
+  margin-bottom: 21px;
+}
+.ad-banner a {
+  text-decoration: underline;
+  margin-left: 6px;
+}
+
+.account-detail {
+  position: absolute;
+  /* 원래 높이 */
+  top: 308px;
+
+  bottom: 0;
+  width: 100%;
+  padding: 24px 30px;
+  background: #f5f5f5;
+  box-shadow: 0px -5px 14px rgba(189, 144, 28, 0.08);
+  border-radius: 30px 30px 0px 0px;
+  transition: top 0.1s cubic-bezier(0.25, 0.46, 0.45, 0.94), opacity 0.2s;
+}
+.wide.account-detail {
+  /* 클릭 높이 */
+  top: 55px;
+}
+
+.list-scroll-btn {
+  width: 48px;
+  height: 2.15px;
+  background: #c4c4c4;
+  border-radius: 4px;
+  position: absolute;
+  right: 44%;
+  top: 4.3px;
+  border: none;
+}
+
+.account-detail .saving-container {
+  width: 100%;
+  margin-bottom: 17px;
+  overflow-x: scroll;
+}
+.account-detail .saving-container .saving-container-inner {
+  width: auto;
+  display: flex;
+}
+
+.account-detail .saving-container .saving-list {
+  display: flex;
+}
+
+.account-detail .saving-container .saving-list .saving {
+  width: 162px;
+  height: 47px;
+  position: relative;
+  background: #dadada;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.account-detail .saving-container .saving-list .saving + .saving {
+  margin-left: 13px;
+}
+
+.account-detail .saving-container .saving-list .saving .progressing {
+  width: 60%;
+  height: 100%;
+  background-color: #ff5f00;
+}
+
+.account-detail .saving-container .saving-list .saving .saving-info {
+  position: absolute;
+  top: 0;
+  left: 0;
+  top: 5px;
+  left: 13px;
+  display: flex;
+  flex-direction: column;
+}
+.account-detail .saving-container .saving-list .saving .saving-info > span {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.saving-container .add-saving-container {
+  display: flex;
+  align-items: center;
+  margin-left: 19px;
+}
+
+.saving-container .add-saving-container button {
+  padding: 0;
+  margin-right: 6px;
+  background: none;
+  border: 0;
+}
+
+.saving-container .add-saving-container button img {
+  vertical-align: top;
+}
+
+.saving-container .add-saving-container span {
+  width: 70px;
+  font-weight: 500;
+  font-size: 12px;
+  color: #ff5f00;
+}
+
+.transaction-container {
+  height: 43vh;
+  overflow-y: scroll;
+}
+.wide.transaction-container {
+  height: 70vh;
+}
+
+/* 오늘 지출 내역 */
+.transaction-for-a-day .transaction-status {
+  display: flex;
+  margin-bottom: 8px;
+  justify-content: space-between;
+}
+
+.transaction-for-a-day .transaction-status .transaction-date {
+  line-height: 21px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+.transaction-for-a-day .transaction-status .transaction-total {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 21px;
+  color: #b4b4b4;
+}
+
+.transaction-for-a-day .transaction__list .transaction__item {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+  padding: 7px 0;
+  border-bottom: 1px solid #dcdcdc;
+  color: #444444;
+}
+
+.transaction-for-a-day + .transaction-for-a-day {
+  margin-top: 38px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/common.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/expense-management-page.css">
+    <link rel="stylesheet" href="./css/transfer-page.css">
+    <link rel="stylesheet" href="./css/transfer-input-page.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.0/dist/chart.min.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap">
+        <!-- 하단 nav -->
+        <nav>
+            <h2 class="section-title__hide"></h2>
+            <ul>
+                <li><a href="javescript:void(0)"><img src="./images/home.png" alt="홈 아이콘"></a></li>
+                <li><a href="javescript:void(0)"><img src="./images/group.png" alt="그룹 아이콘"></a></li>
+                <li><a href="javescript:void(0)"><img src="./images/skypeMessage.png" alt="메세지 아이콘"></a></li>
+                <li><a href="javescript:void(0)"><img src="./images/more.png" alt="더보기 아이콘"></a></li>
+            </ul>
+        </nav>
+
+        <!-- 메인 화면 -->
+
+        <div class="swiper mySwiper">
+            <div class="main-account-list-wrap swiper-wrapper">
+
+
+            </div>
+        </div>
+
+        <!-- 메인 화면 end-->
+
+        <!-- 지출관리 -->
+        <div class="expense-management-container">
+
+        </div>
+
+
+        <!-- 이체 -->
+        <section class="transfer-page hidden">
+            <button class="cancel-btn">취소</button>
+            <header>
+                <h1>이체</h1>
+            </header>
+            <!-- 계좌찾기 -->
+            <div class="search-account-container">
+                <bttton class="search-account-input">직접입력</bttton>
+                <ul class="account-list">
+                    <li class="account-item book-marked">
+                        <div class="account-info">
+                            <div class="transfer__avatar"><img src="#" alt=""></div>
+                            <div class="account-info__detail">
+                                <strong>정을수</strong>
+                                <p>국민 112048393002</p>
+                            </div>
+
+                        </div>
+                        <span class="bookmark selected"><img src="./images/star.png" alt="즐겨찾기 아이콘"></span>
+                    </li>
+                    <li class="account-item book-marked">
+                        <div class="account-info">
+                            <div class="transfer__avatar"><img src="#" alt=""></div>
+                            <div class="account-info__detail">
+                                <strong>정을수</strong>
+                                <p>국민 112048393002</p>
+                            </div>
+
+                        </div>
+                        <span class="bookmark selected"><img src="./images/star.png" alt="즐겨찾기 아이콘"></span>
+                    </li>
+                    <li class="account-item book-marked">
+                        <div class="account-info">
+                            <div class="transfer__avatar"><img src="#" alt=""></div>
+                            <div class="account-info__detail">
+                                <strong>정을수</strong>
+                                <p>국민 112048393002</p>
+                            </div>
+
+                        </div>
+                        <span class="bookmark selected"><img src="./images/star.png" alt="즐겨찾기 아이콘"></span>
+                    </li>
+                    <li class="account-item book-marked">
+                        <div class="account-info">
+                            <div class="transfer__avatar"><img src="#" alt=""></div>
+                            <div class="account-info__detail">
+                                <strong>정을수</strong>
+                                <p>국민 112048393002</p>
+                            </div>
+
+                        </div>
+                        <span class="bookmark selected"><img src="./images/star.png" alt="즐겨찾기 아이콘"></span>
+                    </li>
+
+                </ul>
+            </div>
+            <!-- 이체하기 -->
+            <div class="transfer-input-page hidden">
+                <div class="transfer-input__account-info">
+                    <div class="transfer__avatar"><img src="#" alt=""></div>
+                    <div class="transfer-input__account-detail">
+                        <strong>정을수</strong>
+                        <p>국민 112048393002</p>
+                    </div>
+                </div>
+                <div class="expense-input-container"><input type="text" value="300,000">원</div>
+                <div class="current-account-balance">생활비계좌:<span>1,752,900</span>에서</div>
+                <div class="number-keypad">
+                    <div>1</div>
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    <div>5</div>
+                    <div>6</div>
+                    <div>7</div>
+                    <div>8</div>
+                    <div>9</div>
+                    <div>0</div>
+                    <div>00</div>
+                    <div><img src="./images/arrow.png" alt=""></div>
+                </div>
+                <button class="transfer-confirm">다음</button>
+            </div>
+            <!-- 이체완료 메세지 -->
+            <div class="transfer-complete-message-page">
+                <p class="transfer-complete-message">
+                    정을수님께 <br />
+                    300,000원이 <br />
+                    이체되었습니다.
+                </p>
+            </div>
+        </section>
+
+    </div>
+</body>
+
+</html>

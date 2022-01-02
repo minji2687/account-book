@@ -1,0 +1,17 @@
+.cancel-btn,
+.close-btn,
+.expense-management__close-btn {
+  background: none;
+  border: 0;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.24px;
+  position: absolute;
+  top: 0;
+  right: 13px;
+}
+
+.income-mark {
+  color: #ff5f00;
+}

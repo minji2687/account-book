@@ -1,0 +1,128 @@
+.expense-management {
+  background: #ffffff;
+  position: absolute;
+  width: 100%;
+  top: 100vh;
+  z-index: 2;
+  padding: 0 32px;
+  transition: top 1s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.expense-management h2 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+  color: #444444;
+  /* margin-bottom: 17px; */
+}
+
+.expense-management header {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.24px;
+  margin-top: 33px;
+}
+
+/* 기준금액 설정 */
+
+.standard-amount-set .standard-amount-set__info {
+  margin-top: 29px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.standard-amount-set .standard-amount-set__info div {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  text-align: right;
+  letter-spacing: -0.24px;
+  color: #ff5f00;
+}
+
+.standard-amount-set .account-progress-container {
+  margin-top: 28px;
+  margin-bottom: 58px;
+}
+
+.standard-amount-set .account-progress-container .progress {
+  position: relative;
+  height: 9.18px;
+  background: #c4c4c4;
+  border-radius: 3px;
+}
+
+.standard-amount-set .account-progress-container .progress .progressing {
+  width: 128px;
+  height: 100%;
+  background: #ffdb4c;
+  border-radius: 3px 0px 0px 3px;
+}
+
+.standard-amount-set .account-progress-container .progress > .vertical-bar {
+  box-sizing: content-box;
+  display: block;
+  width: 8px;
+  height: 28px;
+  position: absolute;
+  top: -11px;
+  left: 128px;
+  background: #ff5f00;
+  border: 2px solid #ffffff;
+  border-radius: 2px;
+}
+
+.expense-management__daily-report .daily-report__chart {
+  width: auto;
+  height: 198px;
+  border: 1px solid gray;
+  margin-top: 17px;
+}
+
+.expense-management__monthly-report {
+  margin-top: 46px;
+}
+
+.expense-management__monthly-report .monthly-report__graph {
+  height: 308px;
+  border: 1px solid gray;
+  margin-top: 17px;
+}
+
+.expense-management__monthly-report .monthly-report__list {
+  margin-top: 18px;
+  padding-left: 53px;
+}
+
+.expense-management__monthly-report .monthly-report__list li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.expense-management__monthly-report
+  .monthly-report__list
+  li
+  .monthly-report__content {
+  font-weight: 350;
+  font-size: 18px;
+  line-height: 27px;
+  letter-spacing: -0.24px;
+}
+.expense-management__monthly-report
+  .monthly-report__list
+  li
+  .monthly-report__amount {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 27px;
+  text-align: right;
+  letter-spacing: -0.24px;
+  color: #858585;
+}
+.expense-management__monthly-report .monthly-report__list li + li {
+  margin-top: 21px;
+}
