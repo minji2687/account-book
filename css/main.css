@@ -11,6 +11,8 @@ a {
 
 .wrap {
   margin: 0 auto;
+  max-width: 370px;
+  width: 100%;
 }
 
 .account-container {
@@ -21,7 +23,8 @@ a {
 
 .wrap nav {
   height: 76px;
-  width: 375px;
+  max-width: 370px;
+  width: 100%;
   position: fixed;
   bottom: 0;
   background: linear-gradient(163.63deg, #00bdb2 11.35%, #c4e7b8 139.96%);
